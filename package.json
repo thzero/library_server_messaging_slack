@@ -1,0 +1,32 @@
+{
+  "name": "@thzero/library_server_messaging_slack",
+  "version": "0.7.1",
+  "version_major": 0,
+  "version_minor": 7,
+  "version_patch": 1,
+  "version_date": "08/02/2020",
+  "author": "thZero",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thzero/library_server_messaging_slack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thzero/library_server_messaging_slack/issues"
+  },
+  "homepage": "https://github.com/thzero/library_server_messaging_slack#readme",
+  "engines": {
+    "node": ">=13.0.1"
+  },
+  "scripts": {
+    "cli-update": "./node_modules/.bin/library-cli --updateversion --pi",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@slack/web-api": "^5.11.0",
+    "@thzero/library_server": "^0.7.30"
+  },
+  "devDependencies": {
+    "@thzero/library_cli": "^0.7.2"
+  }
+}
