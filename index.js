@@ -26,8 +26,7 @@ class MessagingService extends Service {
 			// See: https://api.slack.com/methods/chat.postMessage
 			const res = await this._webClient.chat.postMessage({ channel: channel, text: message });
 
-			// `res` contains information about the posted message
-			console.log('Message sent: ', res.ts);
+			this._logger.info(`External message to channel '${channel}' sent at ${res.ts}.`);
 		}
 		catch (err) {
 			this._logger.exception(err);
