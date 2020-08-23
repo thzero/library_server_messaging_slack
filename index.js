@@ -17,7 +17,7 @@ class MessagingService extends Service {
 			this._webClient = new WebClient(this._token);
 		}
 		catch (err) {
-			this._logger.exception(err);
+			this._logger.exception('MessagingService', 'init', err);
 		}
 	}
 
@@ -26,10 +26,10 @@ class MessagingService extends Service {
 			// See: https://api.slack.com/methods/chat.postMessage
 			const res = await this._webClient.chat.postMessage({ channel: channel, text: message });
 
-			this._logger.info(`External message to channel '${channel}' sent at ${res.ts}.`);
+			this._logger.info2(`External message to channel '${channel}' sent at ${res.ts}.`);
 		}
 		catch (err) {
-			this._logger.exception(err);
+			this._logger.exception('MessagingService', 'message', err);
 		}
 	}
 }
