@@ -21,15 +21,15 @@ class MessagingService extends Service {
 		}
 	}
 
-	async message(channel, message) {
+	async message(correlationId, channel, message) {
 		try {
 			// See: https://api.slack.com/methods/chat.postMessage
 			const res = await this._webClient.chat.postMessage({ channel: channel, text: message });
 
-			this._logger.info2(`External message to channel '${channel}' sent at ${res.ts}.`);
+			this._logger.info2(`External message to channel '${channel}' sent at ${res.ts}.`, null, correlationId);
 		}
 		catch (err) {
-			this._logger.exception('MessagingService', 'message', err);
+			this._logger.exception('MessagingService', 'message', err), correlationId;
 		}
 	}
 }
