@@ -1,10 +1,10 @@
 {
   "name": "@thzero/library_server_messaging_slack",
-  "version": "0.12.15",
+  "version": "0.12.16",
   "version_major": 0,
   "version_minor": 12,
-  "version_patch": 15,
-  "version_date": "01/18/2021",
+  "version_patch": 16,
+  "version_date": "01/19/2021",
   "author": "thZero",
   "license": "MIT",
   "repository": {
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@slack/web-api": "^6.0.0",
-    "@thzero/library_server": "^0.13.3"
+    "@thzero/library_server": "^0.13.5"
   },
   "devDependencies": {
     "@thzero/library_cli": "^0.13.1"
