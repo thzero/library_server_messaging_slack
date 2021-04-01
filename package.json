@@ -1,10 +1,10 @@
 {
   "name": "@thzero/library_server_messaging_slack",
-  "version": "0.13.7",
+  "version": "0.13.8",
   "version_major": 0,
   "version_minor": 13,
-  "version_patch": 7,
-  "version_date": "01/28/2021",
+  "version_patch": 8,
+  "version_date": "04/01/2021",
   "author": "thZero",
   "license": "MIT",
   "repository": {
@@ -23,7 +23,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@slack/web-api": "^6.0.0"
+    "@slack/web-api": "^6.1.0"
   },
   "devDependencies": {
     "@thzero/library_cli": "^0.13"
