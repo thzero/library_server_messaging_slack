@@ -32,7 +32,7 @@ class MessagingService extends Service {
 		}
 		catch (err) {
 			this._logger.exception('MessagingService', 'message', err), correlationId;
-			return this._error(correlationId);
+			return this._error('MessagingService', 'message', null, err, null, null, correlationId);
 		}
 	}
 }
