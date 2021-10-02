@@ -27,9 +27,12 @@ class MessagingService extends Service {
 			const res = await this._webClient.chat.postMessage({ channel: channel, text: message });
 
 			this._logger.info2(`External message to channel '${channel}' sent at ${res.ts}.`, null, correlationId);
+
+			return this._success(correlationId);
 		}
 		catch (err) {
 			this._logger.exception('MessagingService', 'message', err), correlationId;
+			return this._error(correlationId);
 		}
 	}
 }
