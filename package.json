@@ -1,9 +1,9 @@
 {
   "name": "@thzero/library_server_messaging_slack",
-  "version": "0.14.12",
+  "version": "0.14.13",
   "version_major": 0,
   "version_minor": 14,
-  "version_patch": 12,
+  "version_patch": 13,
   "version_date": "04/20/2022",
   "author": "thZero",
   "license": "MIT",
