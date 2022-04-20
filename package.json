@@ -23,11 +23,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@slack/web-api": "^6.7.1",
-    "@thzero/library_server": "^0.15.34"
+    "@slack/web-api": "^6.7.1"
   },
   "peerDependencies": {
     "@thzero/library_common": "^0.15",
-    "@thzero/library_common_service": "^0.15"
+    "@thzero/library_common_service": "^0.15",
+    "@thzero/library_server": "^0.15"
   }
 }
