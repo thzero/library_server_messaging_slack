@@ -4,6 +4,12 @@
 
 # library_server_messaging_slack
 
+## Requirements
+
+### NodeJs
+
+[NodeJs](https://nodejs.org) version 18+
+
 ### Installation
 
 [![NPM](https://nodei.co/npm/@thzero/library_server_messaging_slack.png?compact=true)](https://npmjs.org/package/@thzero/library_server_messaging_slack)
