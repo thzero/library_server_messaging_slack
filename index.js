@@ -1,6 +1,6 @@
 import { WebClient } from '@slack/web-api';
 
-import Service from '@thzero/library_server/service/index';
+import Service from '@thzero/library_server/service/index.js';
 
 class MessagingService extends Service {
 	constructor() {
@@ -31,7 +31,7 @@ class MessagingService extends Service {
 			return this._success(correlationId);
 		}
 		catch (err) {
-			this._logger.exception('MessagingService', 'message', err), correlationId;
+			this._logger.exception('MessagingService', 'message', err, correlationId);
 			return this._error('MessagingService', 'message', null, err, null, null, correlationId);
 		}
 	}
