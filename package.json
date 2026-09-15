@@ -1,5 +1,6 @@
 {
   "name": "@thzero/library_server_messaging_slack",
+  "type": "module",
   "version": "0.18.26",
   "version_major": 0,
   "version_minor": 18,
@@ -22,7 +23,9 @@
   },
   "scripts": {
     "cli-update": "library-cli --updateversion --pi",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test \"test/*.test.js\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@slack/web-api": "^8.1.1"
@@ -31,5 +34,8 @@
     "@thzero/library_common": "^0.18",
     "@thzero/library_common_service": "^0.18",
     "@thzero/library_server": "^0.18"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.5"
   }
 }
